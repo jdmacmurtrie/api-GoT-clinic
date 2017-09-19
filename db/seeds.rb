@@ -1,24 +1,24 @@
-# Region.destroy_all
-# House.destroy_all
-#
-# dorne = HTTParty.get('https://anapioficeandfire.com/api/houses?region=dorne&pageSize=100')
-# vale = HTTParty.get('https://anapioficeandfire.com/api/houses?region=the vale&pageSize=100')
-# north = HTTParty.get('https://anapioficeandfire.com/api/houses?region=the north&pageSize=100')
-# riverlands = HTTParty.get('https://anapioficeandfire.com/api/houses?region=the riverlands&pageSize=100')
-# reach = HTTParty.get('https://anapioficeandfire.com/api/houses?region=the reach&pageSize=100')
-# stormlands = HTTParty.get('https://anapioficeandfire.com/api/houses?region=the stormlands&pageSize=100')
-# islands = HTTParty.get('https://anapioficeandfire.com/api/houses?region=iron islands&pageSize=100')
-# regions = [dorne, vale, north, riverlands, reach, stormlands, islands]
-#
-# regions.each do |region|
-#   if Region.find_by_name(region.first['region']).nil?
-#     Region.create(name: region.first['region'])
-#   end
-#   region.each do |house|
-#     House.create(name: house["name"], sigil: house["coatOfArms"], words: house["words"], region: Region.find_by_name(house['region']))
-#   end
-# end
-#
+Region.destroy_all
+House.destroy_all
+
+dorne = HTTParty.get('https://anapioficeandfire.com/api/houses?region=dorne&pageSize=100')
+vale = HTTParty.get('https://anapioficeandfire.com/api/houses?region=the vale&pageSize=100')
+north = HTTParty.get('https://anapioficeandfire.com/api/houses?region=the north&pageSize=100')
+riverlands = HTTParty.get('https://anapioficeandfire.com/api/houses?region=the riverlands&pageSize=100')
+reach = HTTParty.get('https://anapioficeandfire.com/api/houses?region=the reach&pageSize=100')
+stormlands = HTTParty.get('https://anapioficeandfire.com/api/houses?region=the stormlands&pageSize=100')
+islands = HTTParty.get('https://anapioficeandfire.com/api/houses?region=iron islands&pageSize=100')
+regions = [dorne, vale, north, riverlands, reach, stormlands, islands]
+
+regions.each do |region|
+  if Region.find_by_name(region.first['region']).nil?
+    Region.create(name: region.first['region'])
+  end
+  region.each do |house|
+    House.create(name: house["name"], sigil: house["coatOfArms"], words: house["words"], region: Region.find_by_name(house['region']))
+  end
+end
+
 
 
 

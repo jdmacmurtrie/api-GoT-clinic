@@ -1,0 +1,32 @@
+{
+ "regions": [
+    {
+      "id": 1,
+      "name": "Dorne"
+    },
+    {
+      "id": 2,
+      "name": "The Vale"
+    },
+    {
+      "id": 3,
+      "name": "The North"
+    },
+    {
+      "id": 4,
+      "name": "The Reach"
+    },
+    {
+      "id": 5,
+      "name": "The Riverlands"
+    },
+    {
+      "id": 6,
+      "name": "The Stormlands"
+    },
+    {
+      "id": 7,
+      "name": "Iron Islands"
+    }
+  ]
+}
