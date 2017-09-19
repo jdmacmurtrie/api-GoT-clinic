@@ -1,3 +1,6 @@
-<% @regions.each do |region| %>
-  <li><%= link_to region.name, region_path(region) %></li>
-<% end %>
+<div class='regions'>
+  <h1>Regions of Westeros</h1>
+  <% @regions.each do |region| %>
+    <li><%= link_to region.name, region_path(region) %></li>
+  <% end %>
+</div>

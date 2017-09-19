@@ -1,12 +1,14 @@
-<h1><%= @region.name %></h1>
+<div class="regions">
+  <h1><%= @region.name %></h1>
 
-<p>Climate: <%= @region.weather %></p>
-<p>Current Temp: <%= @region.temperature %></p>
-<h2>Houses:</h2>
-<% @houses.each do |house| %>
+  <p>Climate: <%= @region.weather %></p>
+  <p>Current Temp: <%= @region.temperature %></p>
+  <h2>Houses:</h2>
+  <% @houses.each do |house| %>
   <h3><%= house.name %></h3>
   <li>Sigil: <%= house.sigil %></li>
   <% if house.words %>
-    <li>House Words: <%= house.words %></li>
+  <li>House Words: <%= house.words %></li>
   <% end %>
-<% end %>
+  <% end %>
+</div>

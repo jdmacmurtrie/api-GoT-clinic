@@ -13,3 +13,12 @@
  *= require_tree .
  *= require_self
  */
+
+ body {
+   background: url(https://i.pinimg.com/736x/ce/9c/4f/ce9c4f37b386a1bc0dc21da01f1c1f9b--game-of-thrones-westeros-westeros-map.jpg) no-repeat center right;
+ }
+
+.regions {
+  margin-left: 50px;
+  font-family: Caflisch Script Pro, cursive; 
+}
