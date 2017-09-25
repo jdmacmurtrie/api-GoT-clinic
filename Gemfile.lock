@@ -203,6 +203,7 @@ PLATFORMS
 
 DEPENDENCIES
   capybara
+  dotenv
   dotenv-rails
   factory_girl_rails
   httparty
